@@ -14,8 +14,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="viewClass.css">
-        <title>JSP Page</title>
+        <title>View Employees</title>
     </head>
     <body>
         
@@ -36,7 +35,7 @@
                 {
                     %>
                     
-                    <p class="body"><%=employee.getName()%>&nbsp;<%=employee.getSurname()%>&nbsp;earns <%=employee.getSalary()%>&nbsp;monthly at the <%=employee.getDept()%> department.</p><br>
+                    <p><%=employee.getName()%>&nbsp;<%=employee.getSurname()%>&nbsp;earns <%=employee.getSalary()%>&nbsp;monthly at the <%=employee.getDept()%> department.</p><br>
                     
                     <%
                 }

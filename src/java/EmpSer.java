@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import pojo.Address;
 import pojo.Employee;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -85,7 +86,7 @@ public class EmpSer extends HttpServlet {
                 empAdd.setPostalCode(postalCode);
                 
                 ei.addEmployee(emp,empAdd);
-                
+                //JOptionPane.showMessageDialog(null, "Employee has been added","Employee system", JOptionPane.INFORMATION_MESSAGE);
                 request.getSession().setAttribute("bean", ei);
                 
                 response.sendRedirect("index.html");
