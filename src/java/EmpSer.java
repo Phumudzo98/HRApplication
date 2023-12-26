@@ -89,7 +89,7 @@ public class EmpSer extends HttpServlet {
                 //JOptionPane.showMessageDialog(null, "Employee has been added","Employee system", JOptionPane.INFORMATION_MESSAGE);
                 request.getSession().setAttribute("bean", ei);
                 
-                response.sendRedirect("index.html");
+                response.sendRedirect("addEmp.jsp");
                 
             }
             else if(choice.equals("view"))
